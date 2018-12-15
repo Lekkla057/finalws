@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div id="nav navbar-nav">
+      <router-link  to="/" class="navbar-item navbar-link active">Home</router-link> |
+      <router-link  to="/about" class="navbar-item navbar-link ">About</router-link> | 
+      <router-link to="/product"  class="navbar-item navbar-link ">Category</router-link> |
+      <router-link  to="/user" class="navbar-item navbar-link ">User</router-link>|
+      <router-link  to="/grap" class="navbar-item navbar-link ">Graph</router-link>
     </div>
+    </nav>
     <router-view/>
   </div>
+  
 </template>
-
+<!-- router-link จะมาคู่กับ router-view เสมอ คือการเอาข้อมูลไปแทนใน router-view -->
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
