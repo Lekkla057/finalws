@@ -1,5 +1,5 @@
 <template>
-<div v-if="datasets[0].data.length >0"><chartjs-bar v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-bar></div>
+<div v-if="datasets[0].data.length >0"><chartjs-polar-area v-bind:labels="labels" v-bind:datasets="datasets" v-bind:option="option"></chartjs-polar-area></div>
  
 </template>
 
