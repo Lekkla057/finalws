@@ -12,6 +12,7 @@
         </b-form-group>
       </b-col>
 
+
   <b-table striped hover :items="items" :fields="fields" :filter="filter" :per-page="pageSize" :current-page="pageIndex">
     <template slot="show_details" slot-scope="row">
       <!-- we use @click.stop here to prevent emitting of a 'row-clicked' event  -->
